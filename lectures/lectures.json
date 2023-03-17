@@ -1,0 +1,128 @@
+{
+  "lectures": {
+    "module-01": {
+      "class-01": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/EbkCS6yhtRTcx-ZBFsJ0k6C459ACUxWv696pk8xn_gOyAmE1p5g7qnOKxJo5T3ca.W19_OuVXdZtZvRRB",
+          "date": "1667328828268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-02": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-03": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-04": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-05": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "date": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      }
+    },
+    "module-02": {
+      "class-06": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-07": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-08": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-09": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      },
+      "class-10": {
+        "primary": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        },
+        "backup": {
+          "link": "https://zoom.us/rec/share/OTHER-URL",
+          "timestamp": "1667328823268",
+          "instructor": "Audrey Patterson"
+        }
+      }
+    }
+  }
+}
