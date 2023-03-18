@@ -81,3 +81,5 @@ It's extremely critical that you're set up and ready to go on day 1, and if not 
         - [ ] Expected failure
         - [ ] Edge Case (if applicable/obvious)
     ```
+
+- Add a section to the /python/README.md for a Table of Contents entry. Bottom of [here](https://github.com/adamowada/python-401n7-data-structures-and-algorithms/tree/main/python) for example.
