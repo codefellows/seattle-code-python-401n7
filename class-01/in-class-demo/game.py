@@ -53,6 +53,13 @@ def main():
     while name != "Adam":
         name = input("What is your name again? ")
 
+    past_orders = []
+
+    while True:
+        order = input("What is your order? ")
+        past_orders.append(order)
+        print("the past order are:", past_orders)
+    
 
 if __name__ == "__main__":
     main()
