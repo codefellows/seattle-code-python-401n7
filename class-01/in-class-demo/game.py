@@ -50,6 +50,8 @@ def main():
     else:
         print("You are not the instructor!!")
 
+    while name != "Adam":
+        name = input("What is your name again? ")
     
 
 if __name__ == "__main__":
