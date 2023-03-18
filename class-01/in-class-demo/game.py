@@ -43,6 +43,9 @@ def main():
     Tea
     Unicorn Tears"""
     print(menu)
+    if name == "Adam":
+        print("you are the instructor of 401n7.")
+    
 
 
 if __name__ == "__main__":
