@@ -52,7 +52,7 @@ def main():
 
     while name != "Adam":
         name = input("What is your name again? ")
-    
+
 
 if __name__ == "__main__":
     main()
