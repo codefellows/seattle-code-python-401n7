@@ -2,7 +2,7 @@ def main():
     name = input("What is your name?")
     # let's use an f string
     print(f"Hello {name}")
-    menu = "**************************************
+    menu = """**************************************
 **    Welcome to the Snakes Cafe!   **
 **    Please see our menu below.    **
 **
@@ -32,7 +32,8 @@ Drinks
 ------
 Coffee
 Tea
-Unicorn Tears"
+Unicorn Tears"""
+    print(menu)
 
 
 if __name__ == "__main__":
