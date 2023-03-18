@@ -45,7 +45,10 @@ def main():
     print(menu)
     if name == "Adam":
         print("you are the instructor of 401n7.")
-    
+    elif name == "adam":
+        print("you are the instructor of 401n7.")
+    else:
+        print("You are not the instructor!!")
 
 
 if __name__ == "__main__":
