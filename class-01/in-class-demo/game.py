@@ -1,8 +1,11 @@
+"""
+This is an example docstring
+:return: no return
+"""
+
+
 def main():
-    """
-    This is an example docstring
-    :return: no return
-    """
+    hello = "hi"
     name = input("What is your name?")
     # let's use an f string
     print(f"Hello {name}")
