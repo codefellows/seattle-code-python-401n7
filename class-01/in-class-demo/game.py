@@ -1,4 +1,8 @@
 def main():
+    """
+    This is an example docstring
+    :return: no return
+    """
     name = input("What is your name?")
     # let's use an f string
     print(f"Hello {name}")
@@ -8,7 +12,7 @@ def main():
     **
     ** To quit at any time, type "quit" **
     **************************************
-    
+
     Appetizers
     ----------
     Wings
