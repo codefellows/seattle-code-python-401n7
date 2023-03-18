@@ -1,6 +1,14 @@
+"""
+game.py is a demo of python's inputs and outputs
+"""
+
+
 def main():
-    """    This is an example docstring    :return: no return    """
-    name = input("What is your name?")
+    """
+    This is an example docstring
+    :return: no return
+    """
+    name = input("What is your name? ")
     # let's use an f string
     print(f"Hello {name}")
     menu = """**************************************
