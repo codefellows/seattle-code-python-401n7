@@ -1,3 +1,5 @@
+print("maybe I don't want this to be printed!")
+
 def test():
     print("potato_module.py's __name__ is:", __name__)
 
