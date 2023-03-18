@@ -1,4 +1,4 @@
-from module import test
+from potato_module import test
 
 
 # this block of code is only truthy if this file is executed as a script
