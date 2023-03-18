@@ -1,5 +1,6 @@
 def main():
-    pass
+    name = input("What is your name?")
+    print("Hello ${name}")
 
 
 if __name__ == "__main__":
