@@ -2,7 +2,7 @@
 
 ## Problem Domain
 
-Write a function that takes and array of integers as an argument as an input and returns a sum of all of those integers as an output.
+Write a function that takes and array of integers as an argument/input and returns a sum of all of those integers as an output.
 
 ## Edge Cases
 
