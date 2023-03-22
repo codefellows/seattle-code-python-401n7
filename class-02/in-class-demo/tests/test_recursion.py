@@ -7,6 +7,12 @@ def test_factorial_exists():
     assert factorial
 
 
+def test_factorial_one():
+    actual = factorial(1)
+    expected = 1
+    assert actual == expected
+
+
 # What's a factorial?
 # factorial of 3:
 # 3 * 2 * 1 = 6
