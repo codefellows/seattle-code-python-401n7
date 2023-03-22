@@ -4,5 +4,5 @@ def factorial(n):
         return 1
 
     # recursive case
-    n * factorial(n - 1)
+    return n * factorial(n - 1)
 
