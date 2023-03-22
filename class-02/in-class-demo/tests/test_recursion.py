@@ -30,4 +30,7 @@ def test_factorial_four():
     assert actual == expected
 
 
-
+def test_factorial_default():
+    actual = factorial()
+    expected = 24
+    assert actual == expected

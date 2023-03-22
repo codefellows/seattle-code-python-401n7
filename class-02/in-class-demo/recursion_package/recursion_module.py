@@ -1,4 +1,4 @@
-def factorial(n):
+def factorial(n=4):
     """
     Return n! representing the factorial
     :param n: the number to get the factorial of
