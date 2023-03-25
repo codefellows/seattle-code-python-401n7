@@ -15,5 +15,4 @@ with open("example.txt", "r") as file:
 
 with open("example_write.txt", "w") as file:
     file.write("Hello world!!")
-    print(file.read())
 
