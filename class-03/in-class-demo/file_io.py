@@ -23,6 +23,10 @@ with open("example.txt", "r") as reader, open("example_write.txt", "a") as file:
 
 
 # File doesn't exist!
-with open("does_not_exist.txt", "r") as file:
-    content = file.read()
-    print(content)
+try:
+    with open("does_not_exist.txt", "r") as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    # possibly do other logic here
+    print("The file does not exist")
