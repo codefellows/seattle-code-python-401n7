@@ -46,3 +46,19 @@ If the file exists, an error (FileExistsError) is raised.
 If the file does not exist, it creates a new file for both reading and writing.
 The file can be both read and written, but it must not exist before opening.
 Choose the appropriate mode for your use case to avoid data loss or errors.
+
+
+# Exceptions
+
+```python
+try:
+    # Code that might raise an exception
+except ExceptionType1:
+    # Code to handle ExceptionType1
+except ExceptionType2:
+    # Code to handle ExceptionType2
+else:
+    # Code to execute if no exception occurred
+finally:
+    # Code to execute regardless of whether an exception occurred or not
+```
