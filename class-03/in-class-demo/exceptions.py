@@ -15,3 +15,20 @@ try:
     print(my_list[7])
 except IndexError:
     print("that index doesn't exist!")
+
+
+# Custom error handling
+class InsufficientFundsError(Exception):
+    pass
+
+
+def withdraw(account_balance, amount):
+    if amount > account_balance:
+        raise InsufficientFundsError("Insufficient funds.")
+    return account_balance - amount
+
+
+try:
+    new_balance = withdraw(100, 200)
+except InsufficientFundsError as e:
+    print(e)
