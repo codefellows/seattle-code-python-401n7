@@ -13,4 +13,5 @@ except TypeError:
 my_list = [1, 2, 3, 4, 5]
 try:
     print(my_list[7])
-
+except IndexError:
+    print("that index doesn't exist!")
