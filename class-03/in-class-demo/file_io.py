@@ -22,3 +22,7 @@ with open("example.txt", "r") as reader, open("example_write.txt", "a") as file:
     file.write(reader.read())
 
 
+# File doesn't exist!
+with open("does_not_exist.txt", "r") as file:
+    content = file.read()
+    print(content)
