@@ -20,7 +20,3 @@ with open("example_write.txt", "w") as file:
 with open("example.txt", "r") as reader, open("example_write.txt", "a") as file:
     file.write("Hello again")
     file.write(reader.read())
-
-# with open(d_path, 'r') as reader, open(d_r_path, 'w') as writer:
-#     dog_breeds = reader.readlines()
-#     writer.writelines(reversed(dog_breeds))
