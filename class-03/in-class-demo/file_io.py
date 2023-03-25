@@ -16,3 +16,6 @@ with open("example.txt", "r") as file:
 with open("example_write.txt", "w") as file:
     file.write("Hello world!!")
 
+
+with open("example_write.txt", "a") as file:
+    file.write("Hello again")
