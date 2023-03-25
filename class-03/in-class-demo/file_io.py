@@ -13,5 +13,7 @@ with open("example.txt", "r") as file:
     print(content)
 
 
-
+with open("example_write.txt", "w") as file:
+    content = file.read()
+    print(content)
 
