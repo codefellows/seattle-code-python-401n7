@@ -6,4 +6,7 @@ print(file.closed)
 file.close()
 
 
-
+# Use a 'with' statement!
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
