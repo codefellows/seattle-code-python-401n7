@@ -1,3 +1,5 @@
 try:
     print(3 / 0)
-except 
+except ZeroDivisionError:
+    print("you can't do that")
+
