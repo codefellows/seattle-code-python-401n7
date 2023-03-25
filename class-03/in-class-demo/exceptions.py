@@ -1,1 +1,3 @@
-print(3/0)
+try:
+    print(3 / 0)
+except 
