@@ -7,6 +7,11 @@ file.close()
 
 
 # Use a 'with' statement!
+# example of a context manager. here it automatically closes the file
 with open("example.txt", "r") as file:
     content = file.read()
     print(content)
+
+
+
+
