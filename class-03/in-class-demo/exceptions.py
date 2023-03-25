@@ -29,6 +29,6 @@ def withdraw(account_balance, amount):
 
 
 try:
-    new_balance = withdraw(100, 200)
+    new_balance = withdraw(1, 20)
 except InsufficientFundsError as e:
     print(e)
