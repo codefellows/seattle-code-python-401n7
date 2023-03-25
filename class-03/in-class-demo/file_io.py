@@ -30,3 +30,10 @@ try:
 except FileNotFoundError:
     # possibly do other logic here
     print("The file does not exist")
+else:
+    # Code to execute if no exception occurred
+    print("The file MUST exist")
+finally:
+    # Code to execute regardless of whether an exception occurred or not
+    print("This will always print, the try except block is done")
+
