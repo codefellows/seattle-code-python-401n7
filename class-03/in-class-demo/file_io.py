@@ -4,5 +4,7 @@ content = file.read()
 file.close()
 print(content)
 
+print(file.closed)
+
 
 
