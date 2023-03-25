@@ -32,3 +32,4 @@ try:
     new_balance = withdraw(1, 20)
 except InsufficientFundsError as e:
     print(e)
+    print("other logic can also go here")
