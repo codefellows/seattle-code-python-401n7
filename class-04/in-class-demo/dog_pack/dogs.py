@@ -16,3 +16,4 @@ if __name__ == "__main__":
     print(brock.name)
     kai = Dog()
     print(kai.cute)
+    print(kai.name)
