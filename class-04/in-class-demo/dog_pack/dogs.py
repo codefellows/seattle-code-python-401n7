@@ -4,3 +4,8 @@ class Dog:
     pass
 
 
+if __name__ == "__main__":
+    # create an instance of a Dog:
+    brock = Dog()
+    
+
