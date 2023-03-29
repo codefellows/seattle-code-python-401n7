@@ -21,6 +21,9 @@ class Collie(Dog):
     def say_good_morning(self):
         print(f"Good morning, my name is {self.name}")
 
+    def __str__(self):
+        return f"I am a collie named {self.name}"
+
 
 if __name__ == "__main__":
     # create an instance of a Dog:
