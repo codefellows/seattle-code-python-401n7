@@ -29,7 +29,7 @@ class Collie(Dog):
     # developer friendly string representation of an object
     def __repr__(self):
         # return a string with how to reproduce the object
-        return f"Collie({self.name})"
+        return f'Collie("{self.name}")'
 
 
 if __name__ == "__main__":
