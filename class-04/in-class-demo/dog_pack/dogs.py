@@ -1,6 +1,10 @@
+class Animal:
+    pass
+
+
 # Classes start with a capital letter
 # Singular
-class Dog:
+class Dog(Animal):
     # this gets invoked every time a new object is created
     # initialize the instance's attributes
     def __init__(self, name="unknown"):
@@ -16,6 +20,9 @@ class Lab(Dog):
     def greet(self):
         print(f"Hello I'm {self.name}")
 
+    def __repr__(self):
+        return f'Lab("{self.name}")'
+
 
 class Collie(Dog):
     def say_good_morning(self):
@@ -23,8 +30,8 @@ class Collie(Dog):
 
     # user friendly string representation of an object
     # invoked with print() and str()
-    # def __str__(self):
-    #     return f"I am a collie named {self.name}!"
+    def __str__(self):
+        return f"I am a collie named {self.name}!"
 
     # developer friendly string representation of an object
     def __repr__(self):
