@@ -18,7 +18,7 @@ class Lab(Dog):
 
 
 class Collie(Dog):
-    def greet(self):
+    def say_good_morning(self):
         print(f"Good morning, my name is {self.name}")
 
 
@@ -34,4 +34,4 @@ if __name__ == "__main__":
     print(hachiko.cute)
     hachiko.greet()
     yoshi = Collie("Yoshi")
-    yoshi.greet()
+    yoshi.say_good_morning()
