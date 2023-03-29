@@ -12,7 +12,9 @@ class Dog:
 
 # sub class!
 class Lab(Dog):
-    pass
+    # An instance method!
+    def greet(self):
+        print(f"Hello I'm {self.name}")
 
 
 class Collie(Dog):
@@ -21,11 +23,12 @@ class Collie(Dog):
 
 if __name__ == "__main__":
     # create an instance of a Dog:
-    brock = Dog("Brock")
-    print(brock.name)
-    kai = Dog()
-    print(kai.cute)
-    print(kai.name)
-    hachiko = Lab()
+    # brock = Dog("Brock")
+    # print(brock.name)
+    # kai = Dog()
+    # print(kai.cute)
+    # print(kai.name)
+    hachiko = Lab("Hachiko")
     print(hachiko.name)
     print(hachiko.cute)
+    hachiko.greet()
