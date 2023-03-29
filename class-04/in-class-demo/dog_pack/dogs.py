@@ -44,8 +44,13 @@ class DogPack:
     A class that represents a collection of Dog instances.
     Each instance of a DogPack is a list of Dog instances.
     """
+
+    # this is called a class variable
+    instances = []
+
     def __init__(self, dogs):
         self.dogs = dogs
+        DogPack.instances.append(self)
 
     # must return string type!
     def __str__(self):
@@ -80,4 +85,4 @@ if __name__ == "__main__":
     print(dog_pack_01)
     dog_pack_02 = DogPack([])
     dog_pack_03 = DogPack([yoshi])
-
+    print(DogPack.instances)
