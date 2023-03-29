@@ -11,7 +11,12 @@ class Dog:
 
 
 # sub class!
-class 
+class Lab(Dog):
+    def __init__(self, name):
+        self.name = name
+
+class Collie(Dog):
+    pass
 
 
 if __name__ == "__main__":
@@ -21,3 +26,4 @@ if __name__ == "__main__":
     kai = Dog()
     print(kai.cute)
     print(kai.name)
+    hachiko = Lab()
