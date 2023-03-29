@@ -26,8 +26,10 @@ class Collie(Dog):
     def __str__(self):
         return f"I am a collie"
 
+    # developer friendly string representation of an object
     def __repr__(self):
-        pass
+        # return a string with how to reproduce the object
+        return f"Collie({self.name})"
 
 
 if __name__ == "__main__":
@@ -45,3 +47,4 @@ if __name__ == "__main__":
     yoshi.say_good_morning()
     print(yoshi)
     print(str(yoshi))
+    print(repr(yoshi))
