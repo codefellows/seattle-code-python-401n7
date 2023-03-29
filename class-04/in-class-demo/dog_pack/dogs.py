@@ -22,7 +22,7 @@ class Collie(Dog):
         print(f"Good morning, my name is {self.name}")
 
     def __str__(self):
-        return f"I am a collie named {self.name}"
+        return f"I am a collie"
 
 
 if __name__ == "__main__":
