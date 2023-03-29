@@ -35,3 +35,4 @@ if __name__ == "__main__":
     hachiko.greet()
     yoshi = Collie("Yoshi")
     yoshi.say_good_morning()
+    print(yoshi)
