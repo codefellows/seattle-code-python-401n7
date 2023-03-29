@@ -24,7 +24,7 @@ class Collie(Dog):
     # user friendly string representation of an object
     # invoked with print() and str()
     def __str__(self):
-        return f"I am a collie"
+        return f"I am a collie named {self.name}!"
 
     # developer friendly string representation of an object
     def __repr__(self):
