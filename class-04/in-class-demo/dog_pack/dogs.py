@@ -49,7 +49,7 @@ class DogPack:
 
     def __str__(self):
         dog_strings = [str(dog) for dog in self.dogs]
-        return dog_strings
+        return " ".join(dog_strings)
 
 
 if __name__ == "__main__":
