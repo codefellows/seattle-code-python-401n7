@@ -21,6 +21,8 @@ class Collie(Dog):
     def say_good_morning(self):
         print(f"Good morning, my name is {self.name}")
 
+    # user friendly string representation of an object
+    # invoked with print() and str()
     def __str__(self):
         return f"I am a collie"
 
@@ -42,3 +44,4 @@ if __name__ == "__main__":
     yoshi = Collie("Yoshi")
     yoshi.say_good_morning()
     print(yoshi)
+    print(str(yoshi))
