@@ -24,6 +24,9 @@ class Collie(Dog):
     def __str__(self):
         return f"I am a collie"
 
+    def __repr__(self):
+        pass
+
 
 if __name__ == "__main__":
     # create an instance of a Dog:
