@@ -47,6 +47,7 @@ class DogPack:
     def __init__(self, dogs):
         self.dogs = dogs
 
+    # must return string type!
     def __str__(self):
         dog_strings = [str(dog) for dog in self.dogs]
         return " ".join(dog_strings)
@@ -77,3 +78,6 @@ if __name__ == "__main__":
     # vs. a baseclass/subclass relationship with Dog
     dog_pack_01 = DogPack([midnight, kenai, kaya])
     print(dog_pack_01)
+    dog_pack_02 = DogPack([])
+    dog_pack_03 = DogPack([yoshi])
+
