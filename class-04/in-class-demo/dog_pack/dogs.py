@@ -28,3 +28,4 @@ if __name__ == "__main__":
     print(kai.name)
     hachiko = Lab()
     print(hachiko.name)
+    print(hachiko.cute)
