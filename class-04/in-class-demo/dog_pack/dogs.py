@@ -11,3 +11,4 @@ if __name__ == "__main__":
     # create an instance of a Dog:
     brock = Dog("Brock")
     print(brock.name)
+    kai = Dog()
