@@ -39,6 +39,13 @@ class Collie(Dog):
         return f'Collie("{self.name}")'
 
 
+class DogPack:
+    """
+        
+    """
+    pass
+
+
 if __name__ == "__main__":
     # create an instance of a Dog:
     # brock = Dog("Brock")
