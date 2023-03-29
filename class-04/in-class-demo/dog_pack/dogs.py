@@ -5,6 +5,9 @@ class Dog:
     # initialize the instance's attributes
     def __init__(self, name="unknown"):
         self.name = name
+        self.age = 5
+        self.color = "brown"
+        self.cute = True
 
 
 if __name__ == "__main__":
@@ -12,3 +15,4 @@ if __name__ == "__main__":
     brock = Dog("Brock")
     print(brock.name)
     kai = Dog()
+    print(kai.cute)
