@@ -23,8 +23,8 @@ class Collie(Dog):
 
     # user friendly string representation of an object
     # invoked with print() and str()
-    def __str__(self):
-        return f"I am a collie named {self.name}!"
+    # def __str__(self):
+    #     return f"I am a collie named {self.name}!"
 
     # developer friendly string representation of an object
     def __repr__(self):
@@ -39,12 +39,12 @@ if __name__ == "__main__":
     # kai = Dog()
     # print(kai.cute)
     # print(kai.name)
-    hachiko = Lab("Hachiko")
-    print(hachiko.name)
-    print(hachiko.cute)
-    hachiko.greet()
+    # hachiko = Lab("Hachiko")
+    # print(hachiko.name)
+    # print(hachiko.cute)
+    # hachiko.greet()
     yoshi = Collie("Yoshi")
-    yoshi.say_good_morning()
+    # yoshi.say_good_morning()
     print(yoshi)
-    print(str(yoshi))
-    print(repr(yoshi))
+    # print(str(yoshi))
+    # print(repr(yoshi))
