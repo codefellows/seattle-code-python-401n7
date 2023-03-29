@@ -18,7 +18,8 @@ class Lab(Dog):
 
 
 class Collie(Dog):
-    pass
+    def greet(self):
+        print(f"Good morning, my name is {self.name}")
 
 
 if __name__ == "__main__":
@@ -32,3 +33,5 @@ if __name__ == "__main__":
     print(hachiko.name)
     print(hachiko.cute)
     hachiko.greet()
+    yoshi = Collie("Yoshi")
+    yoshi.greet()
