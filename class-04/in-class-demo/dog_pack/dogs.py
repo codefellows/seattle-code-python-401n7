@@ -3,7 +3,7 @@
 class Dog:
     # this gets invoked every time a new object is created
     # initialize the instance's attributes
-    def __init__(self, name):
+    def __init__(self, name="unknown"):
         self.name = name
 
 
