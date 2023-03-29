@@ -41,9 +41,15 @@ class Collie(Dog):
 
 class DogPack:
     """
-        
+    A class that represents a collection of Dog instances.
+    Each instance of a DogPack is a list of Dog instances.
     """
-    pass
+    def __init__(self, dogs):
+        self.dogs = dogs
+
+    def __str__(self):
+        dog_strings = [str(dog) for dog in self.dogs]
+        return dog_strings
 
 
 if __name__ == "__main__":
@@ -62,3 +68,12 @@ if __name__ == "__main__":
     print(yoshi)
     # print(str(yoshi))
     # print(repr(yoshi))
+
+    midnight = Collie("Midnight")
+    kenai = Collie("Kenai")
+    kaya = Collie("Kaya")
+
+    # My DogPack is a COLLECTION of dogs
+    # vs. a baseclass/subclass relationship with Dog
+    dog_pack_01 = DogPack([midnight, kenai, kaya])
+    print(dog_pack_01)
