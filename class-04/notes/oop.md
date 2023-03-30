@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
 ```
 
-![output](output.png)
+<img src="output.png" width=300px style="margin: auto; display: block">
 
 ## Abstract base classes
 
