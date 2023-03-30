@@ -110,6 +110,8 @@ if __name__ == "__main__":
 
 ```
 
+![output](output.png)
+
 ## Abstract base classes
 
 An abstract base class (ABC) is a class that provides a common interface for its derived classes, defining a set of methods and properties that must be implemented by any concrete (non-abstract) class that inherits from it. Abstract base classes cannot be instantiated directly, meaning you cannot create an object from an abstract base class. Instead, you create objects from the concrete classes that inherit from the abstract base class and provide implementations for the abstract methods.
