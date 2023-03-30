@@ -1,4 +1,17 @@
 <!-- created with ChatGPT -->
+<!-- Prompt:
+Please create a .py file with comments explaining the code, that demonstrates these aspects of Object Oriented Programming in Python and include anything else that's relevant and fits in with the topic:
+- classes
+- base classes/derived classes
+- sub class/super class
+- abstract base classes
+- decorators in Python OOP
+- instance methods, instance attributed, dunder init method
+- dunder methods, data model methods, magic methods
+- class methods, class variables -->
+<!-- Prompt:
+Please give an explanation of an abstract base class vs other types of classes, and an explanation of class methods & class variables vs. instance methods & instance attributes -->
+
 ```python
 # File name: oop_demo.py
 
