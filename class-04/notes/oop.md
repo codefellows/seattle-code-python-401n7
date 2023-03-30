@@ -126,4 +126,4 @@ Class methods are methods that are bound to the class itself, not to any specifi
 
 ## Instance methods & instance attributes
 
-Instance methods are methods that are bound to a specific instance of a class. They can only be called on an instance of the class and are used to define the behavior of the object. Instance methods take a reference to the instance itself as their first argument, usually named self. Instance attributes are variables that are specific to each instance of the class. They are usually defined inside the constructor method (__init__) and store data that is unique to each object.
+Instance methods are methods that are bound to a specific instance of a class. They can only be called on an instance of the class and are used to define the behavior of the object. Instance methods take a reference to the instance itself as their first argument, usually named self. Instance attributes are variables that are specific to each instance of the class. They are usually defined inside the constructor method (```__init__```) and store data that is unique to each object.
