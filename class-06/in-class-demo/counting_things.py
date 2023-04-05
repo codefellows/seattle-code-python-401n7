@@ -17,3 +17,5 @@ for number in roll_2:
 print(roll_2)
 print(roll_dict)
 print([0, 0, 3, 0, 2, 1])
+
+
