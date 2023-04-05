@@ -28,7 +28,8 @@ for number in roll_2:
 # print(Counter((3, 3, 3, 5, 6, 5)).values())
 roll = (3, 3, 3, 5, 6, 5)
 roll = Counter(roll)
+print(roll)
 print(len(roll))
-print(len(roll.most_common()[0]))
+print(len(roll.most_common()))
 
 
