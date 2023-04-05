@@ -16,8 +16,8 @@ for number in roll_2:
     else:
         roll_dict[number] = 1
 
-print(roll_2)
-print(roll_dict)
-print([0, 0, 3, 0, 2, 1])
-print()
-print(Counter((3, 3, 3, 5, 6, 5)))
+# print(roll_2)
+# print(roll_dict)
+# print([0, 0, 3, 0, 2, 1])
+# print()
+print(Counter((3, 3, 3, 5, 6, 5)).most_common())
