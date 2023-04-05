@@ -1,3 +1,4 @@
+```
 def dice\_roller(n): 
     """ Rolls n dice. 
     :param n: Number of dice 
@@ -6,6 +7,7 @@ def dice\_roller(n):
     pass 
 
 if \_\_name\_\_ == "\_\_main\_\_": dice\_roller(6)
+```
 
 Here's an implementation of the `dice_roller` function in Python that uses the `random` module to generate random numbers between 1 and 6, inclusive:
 
