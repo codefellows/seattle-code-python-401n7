@@ -32,5 +32,5 @@ print(roll)
 print(len(roll))
 print(len(roll.most_common(1)))
 print(Counter((3, 3, 3, 5, 6, 5)).most_common())
-
+print(Counter((3, 3, 3, 5, 6, 5)).most_common()[0][1])
 
