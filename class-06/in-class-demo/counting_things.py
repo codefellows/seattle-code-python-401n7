@@ -21,3 +21,7 @@ for number in roll_2:
 # print([0, 0, 3, 0, 2, 1])
 # print()
 print(Counter((3, 3, 3, 5, 6, 5)).most_common())
+print(Counter((3, 3, 3, 5, 6, 5)).most_common(1))
+print(Counter((3, 3, 3, 5, 6, 5)).items())
+print(Counter((3, 3, 3, 5, 6, 5)).values())
+
