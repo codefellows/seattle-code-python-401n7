@@ -1,4 +1,9 @@
 def dice_roller(n):
+    """
+    Rolls n dice.
+    :param n: Number of dice
+    :return: Tuple of n integers, each integer being between 1 - 6 inclusive
+    """
     pass
 
 
