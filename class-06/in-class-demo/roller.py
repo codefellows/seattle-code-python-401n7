@@ -1,5 +1,6 @@
 import random
 
+
 def dice_roller(n):
     """
     Rolls n dice.
@@ -8,6 +9,6 @@ def dice_roller(n):
     """
     return tuple(random.randint(1, 6) for _ in range(n))
 
+
 if __name__ == "__main__":
     print(dice_roller(6))
-
