@@ -22,9 +22,13 @@ for number in roll_2:
 # print()
 
 
-print(Counter((3, 3, 3, 5, 6, 5)).most_common())
-print(Counter((3, 3, 3, 5, 6, 5)).most_common(1))
-print(Counter((3, 3, 3, 5, 6, 5)).items())
-print(Counter((3, 3, 3, 5, 6, 5)).values())
-print(len(Counter((3, 3, 3, 5, 6, 5))))
+# print(Counter((3, 3, 3, 5, 6, 5)).most_common())
+# print(Counter((3, 3, 3, 5, 6, 5)).most_common(1))
+# print(Counter((3, 3, 3, 5, 6, 5)).items())
+# print(Counter((3, 3, 3, 5, 6, 5)).values())
+roll = (3, 3, 3, 5, 6, 5)
+roll = Counter(roll)
+print(len(roll))
+print(len(roll.most_common()[0]))
+
 
