@@ -9,4 +9,9 @@ roll_2 = (3, 3, 3, 5, 6, 5)
 
 roll_dict = {}
 for number in roll_2:
-    current_count = 
+    if number in roll_dict:
+        roll_dict[number] += 1
+    else:
+        roll_dict[number] = 1
+
+
