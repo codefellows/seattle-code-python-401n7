@@ -1,12 +1,12 @@
 ```
-def dice\_roller(n): 
+def dice_roller(n): 
     """ Rolls n dice. 
     :param n: Number of dice 
     :return: Tuple of n integers, each integer being between 1 - 6 inclusive 
     """ 
     pass 
 
-if \_\_name\_\_ == "\_\_main\_\_": dice\_roller(6)
+if __name__ == "__main__": dice_roller(6)
 ```
 
 Here's an implementation of the `dice_roller` function in Python that uses the `random` module to generate random numbers between 1 and 6, inclusive:
@@ -62,7 +62,7 @@ In this version of the code, a `for` loop is used to generate `n` random integer
 
 This version of the code accomplishes the same task as the original version, but uses a `for` loop instead of a tuple comprehension to generate the tuple of random integers.
 
-Now please make dice\_roller a static method in a class called GameLogic
+Now please make dice_roller a static method in a class called GameLogic
 
 Sure! Here's a refactored version of the code that defines the `dice_roller` function as a static method within a class called `GameLogic`:
 
