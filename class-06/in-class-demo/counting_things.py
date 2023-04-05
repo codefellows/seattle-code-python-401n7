@@ -30,6 +30,7 @@ roll = (3, 3, 3, 5, 6, 5)
 roll = Counter(roll)
 print(roll)
 print(len(roll))
-print(len(roll.most_common()))
+print(len(roll.most_common(1)))
+print(Counter((3, 3, 3, 5, 6, 5)).most_common())
 
 
