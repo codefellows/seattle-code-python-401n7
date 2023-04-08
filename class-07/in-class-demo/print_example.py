@@ -1,6 +1,8 @@
 from builtins import print
 
 
-print(print)
+# save a reference to 'old print'
+old_print = print
 
+old_print("hello world")
 
