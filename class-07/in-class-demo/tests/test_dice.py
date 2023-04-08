@@ -43,3 +43,5 @@ def test_play_dice_mock_roller(monkeypatch, capsys):
     play_dice(mock_roller)
     captured = capsys.readouterr()
     print(captured)
+    output_lines = captured.out.strip().split("\n")
+    print(output_lines)
