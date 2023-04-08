@@ -22,4 +22,4 @@ def test_play_dice_quit(monkeypatch, capsys):
     play_dice(default_roller)
     captured = capsys.readouterr()
     print("captured is:", captured)
-    assert captured.out == "Enter (r) to roll or (q) to quit\n"
+    assert captured.out == "Enter (r) to roll or (q) to quit\nOk bye!\n"
