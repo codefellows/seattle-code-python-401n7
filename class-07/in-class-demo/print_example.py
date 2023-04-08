@@ -20,3 +20,7 @@ print("Hello world")
 
 
 assert print("Adam") == "Hello Adam"
+
+
+print = old_print
+print("test")
