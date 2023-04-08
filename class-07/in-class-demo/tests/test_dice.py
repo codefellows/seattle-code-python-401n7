@@ -1,5 +1,5 @@
 import pytest
-from dice import default_roller, play_dice
+from dice import default_roller, play_dice, mock_roller
 
 
 def test_exists():
@@ -28,15 +28,15 @@ def test_play_dice_quit(monkeypatch, capsys):
 def test_play_dice_mock_roller(monkeypatch, capsys):
     rolls = [(5, 6), (6, 1)]
 
-    def mock_roller():
-        """
-        Returns 2 pre-determined 6 sided dice
-        :return: a tuple of 2 dice
-        """
-        if rolls:
-            return rolls.pop(0)
-        else:
-            return default_roller()
+    # def mock_roller():
+    #     """
+    #     Returns 2 pre-determined 6 sided dice
+    #     :return: a tuple of 2 dice
+    #     """
+    #     if rolls:
+    #         return rolls.pop(0)
+    #     else:
+    #         return default_roller()
 
     # if there are tuples inside of rolls, then input returns r, if there isn't it returns q
     monkeypatch.setattr("builtins.input", lambda x: "q" if not rolls else "r")
