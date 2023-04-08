@@ -20,4 +20,5 @@ def test_default_roller():
 def test_play_dice_quit(monkeypatch, capsys):
     monkeypatch.setattr("builtins.input", lambda x: "q")
     play_dice()
-    
+    captured = capsys.readouterr()
+    assert captured.out == "Enter (r) to roll or (q) to quit\n"
