@@ -18,4 +18,6 @@ def test_default_roller():
 # monkeypatch will override input
 # capsys will capture print
 def test_play_dice_quit(monkeypatch, capsys):
+    monkeypatch.setattr("builtins.input", lambda x: "q")
+    play_dice()
     
