@@ -19,7 +19,6 @@ def test_default_roller():
 # capsys will capture print
 def test_play_dice_quit(monkeypatch, capsys):
     monkeypatch.setattr("builtins.input", lambda x: "q")
-    print(input(""))
     play_dice(default_roller)
     captured = capsys.readouterr()
     # print("captured is:", captured)
