@@ -21,6 +21,7 @@ def play_dice(roller):
         choice = input("> ")
 
         if choice == "q":
+            print("Ok bye!")
             break
 
         else:
