@@ -28,9 +28,7 @@ def play_dice(roller):
             print(roll)
 
 
-# step? create a mock roller function!
-
-
+# step2 create a mock roller function!
 if __name__ == "__main__":
     rolls = [(5, 6), (6, 1)]
 
@@ -44,4 +42,5 @@ if __name__ == "__main__":
         else:
             return default_roller()
 
+    # with the option to choose a random dice roller or a mock dice roller, we can now test!
     play_dice(mock_roller)
