@@ -4,7 +4,7 @@ from random import randint
 # The actual random rolling function
 def default_roller():
     """
-    Roll 2 six-sided dice
+    Roll 2 randomly generated six-sided dice
     :return: a tuple of 2 dice
     """
     return tuple([randint(1, 6), randint(1, 6)])
@@ -28,9 +28,17 @@ def play_dice(roller):
             print(roll)
 
 
-
 # step? create a mock roller function!
 
 
 if __name__ == "__main__":
-    play_dice(default_roller)
+    rolls = [(5, 6), (6, 1)]
+
+    def mock_roller():
+        """
+        Returns 2 pre-determined 6 sided dice
+        :return: a tuple of 2 dice
+        """
+        return rolls.pop(0)
+
+    play_dice(mock_roller)
