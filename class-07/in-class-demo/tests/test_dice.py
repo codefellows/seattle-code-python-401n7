@@ -10,3 +10,6 @@ def test_exists():
 def test_default_roller():
     roll = default_roller()
     assert len(roll) == 2
+    assert 1 <= roll[0] <= 6
+    assert 1 <= roll[1] <= 6
+    
