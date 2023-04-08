@@ -46,3 +46,5 @@ def test_play_dice_mock_roller(monkeypatch, capsys):
     output_lines = captured.out.strip().split("\n")
     print(output_lines)
     assert len(output_lines) == 6
+    assert output_lines[0] == "Enter (r) to roll or (q) to quit"
+    
