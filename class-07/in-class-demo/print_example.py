@@ -10,6 +10,7 @@ old_print = print
 # This function will overwrite print
 def new_print(name):
     old_print("Hello " + name)
+    return "Hello " + name
 
 
 print = new_print
@@ -17,3 +18,5 @@ print = new_print
 print("Adam")
 print("Hello world")
 
+
+assert print("Adam") == "Hello Adam"
