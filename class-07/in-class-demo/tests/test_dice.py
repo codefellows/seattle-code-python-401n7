@@ -13,3 +13,5 @@ def test_default_roller():
     assert 1 <= roll[0] <= 6
     assert 1 <= roll[1] <= 6
     assert all(1 <= num <= 6 for num in roll)
+
+
