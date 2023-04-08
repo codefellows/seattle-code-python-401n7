@@ -15,3 +15,7 @@ def test_default_roller():
     assert all(1 <= num <= 6 for num in roll)
 
 
+# monkeypatch will override input
+# capsys will capture print
+def test_play_dice_quit(monkeypatch, capsys):
+    
