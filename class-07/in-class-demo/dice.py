@@ -39,6 +39,9 @@ if __name__ == "__main__":
         Returns 2 pre-determined 6 sided dice
         :return: a tuple of 2 dice
         """
-        return rolls.pop(0)
+        if rolls:
+            return rolls.pop(0)
+        else:
+            return default_roller()
 
     play_dice(mock_roller)
