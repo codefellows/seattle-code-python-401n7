@@ -1,4 +1,7 @@
-# Demo Notes
+# Demo Code
 
-- Class demo consists of going step by step through the unit and flow tests for version 3 of game.
-- See [DEMO.md](../facilitator/DEMO.md) for details
+Class 08 demo code is located [here](https://github.com/adamowada/ten-thousand-401n7)
+
+Check out [mermaid.js](https://mermaid.live/)!
+
+![chart from class](ten-thousand-mermaid-chart.png)
