@@ -14,13 +14,11 @@ def add(a, b):
 
 Name/Value Table structure for <code>add(3, 4)</code>:
 
-```
 | Name   | Value |
 |--------|-------|
 | a      |       |
 | b      |       |
 | result |       |
-```
 
 2. Function 2: Calculate the factorial of a number
 
@@ -34,12 +32,10 @@ def factorial(n):
 
 Name/Value Table structure for <code>factorial(5)</code>:
 
-```
 | Name   | Value |
 |--------|-------|
 | n      |       |
 | Return |       |
-```
 
 Note: Students should track the changes of <code>n</code> and the return values as the function recurses.
 
@@ -56,12 +52,10 @@ def find_max(arr):
 
 Name/Value Table structure for <code>find_max([3, 7, 1, 5, 2])</code>:
 
-```
 | Name      | Value |
 |-----------|-------|
 | arr       |       |
 | max_value |       |
 | element   |       |
-```
 
 Students should focus on updating the <code>max_value</code> and <code>element</code> variables as they iterate through the list.
