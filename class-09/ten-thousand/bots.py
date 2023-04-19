@@ -9,7 +9,7 @@ from ten_thousand.game_logic import GameLogic
 class BaseBot(ABC):
     """Base class for Game bots"""
 
-    def __init__(self, print_all=True):
+    def __init__(self, print_all=False):
         self.last_print = ""
         self.last_roll = []
         self.print_all = print_all
@@ -164,12 +164,49 @@ class RandomRalph(BaseBot):
         return random.choice(["b", "r"])
 
 
+# Anthony Lauren Danner
+class GreedyGreg(BaseBot):
+    def _roll_bank_or_quit(self):
+        # while self.unbanked_points <= 2500:
+        if self.dice_remaining == 0:
+            return "r"
+
+        elif self.dice_remaining <= 3:
+            return "b"
+
+        elif self.unbanked_points >= 2800:
+            return "b"
+
+        return "r"
+
+    def _enter_dice(self):
+        """simulate user entering which dice to keep.
+        Defaults to all scoring dice"""
+
+        return super()._enter_dice()
+
+
+# Team Araceli Jerry
+class SmellyCheli(BaseBot):
+    def _roll_bank_or_quit(self):
+        if self.unbanked_points >= 1000 or self.dice_remaining == 1:
+            return "b"
+
+        return "r"
+
+    def _enter_dice(self):
+        """simulate user entering which dice to keep.
+        Defaults to all scoring dice"""
+
+        return super()._enter_dice()
+
+
 if __name__ == "__main__":
-    num_games = 1000
+    num_games = 100000
     # # NervousNellie: 100000 games played with average score of 8176
     # NervousNellie.play(num_games)
     # # MiddlingMargaret: 100000 games played with average score of 9750
     # MiddlingMargaret.play(num_games)
     # # QuittingQuyen.play(num_games)
-    ralph = RandomRalph(print_all=True)
-    ralph.play(1)
+    GreedyGreg.play(num_games)
+    SmellyCheli.play(num_games)
