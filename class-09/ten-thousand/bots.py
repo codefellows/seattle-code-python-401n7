@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import builtins
+import random
 import re
 from ten_thousand.game import play
 from ten_thousand.game_logic import GameLogic
@@ -8,7 +9,7 @@ from ten_thousand.game_logic import GameLogic
 class BaseBot(ABC):
     """Base class for Game bots"""
 
-    def __init__(self, print_all=False):
+    def __init__(self, print_all=True):
         self.last_print = ""
         self.last_roll = []
         self.print_all = print_all
@@ -53,7 +54,6 @@ class BaseBot(ABC):
             self.dice_remaining = int(re.sub("\D", "", dice_remaining_part))
 
         elif line.startswith("*** "):
-
             self.last_roll = [int(ch) for ch in line if ch.isdigit()]
 
         else:
@@ -159,8 +159,17 @@ class QuittingQuyen(BaseBot):
         return "q"
 
 
+class RandomRalph(BaseBot):
+    def _roll_bank_or_quit(self):
+        return random.choice(["b", "r"])
+
+
 if __name__ == "__main__":
-    num_games = 100000
-    NervousNellie.play(num_games)
-    MiddlingMargaret.play(num_games)
-    QuittingQuyen.play(num_games)
+    num_games = 1000
+    # # NervousNellie: 100000 games played with average score of 8176
+    # NervousNellie.play(num_games)
+    # # MiddlingMargaret: 100000 games played with average score of 9750
+    # MiddlingMargaret.play(num_games)
+    # # QuittingQuyen.play(num_games)
+    ralph = RandomRalph(print_all=True)
+    ralph.play(1)

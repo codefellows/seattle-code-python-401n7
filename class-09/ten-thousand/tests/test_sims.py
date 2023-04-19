@@ -30,14 +30,14 @@ def compare_output_and_expected(captured_output, lines):
 @pytest.mark.parametrize(
     "test_input",
     [
-        ("tests/sims/bank_first_for_two_rounds.sim.txt"),
-        ("tests/sims/bank_one_roll_then_quit.sim.txt"),
-        ("tests/sims/cheat_and_fix.sim.txt"),
-        ("tests/sims/hot_dice.sim.txt"),
-        ("tests/sims/one_and_done.sim.txt"),
-        ("tests/sims/quitter.sim.txt"),
-        ("tests/sims/repeat_roller.sim.txt"),
-        ("tests/sims/zilcher.sim.txt"),
+        "tests/sims/bank_first_for_two_rounds.sim.txt",
+        "tests/sims/bank_one_roll_then_quit.sim.txt",
+        "tests/sims/cheat_and_fix.sim.txt",
+        "tests/sims/hot_dice.sim.txt",
+        "tests/sims/one_and_done.sim.txt",
+        "tests/sims/quitter.sim.txt",
+        "tests/sims/repeat_roller.sim.txt",
+        "tests/sims/zilcher.sim.txt",
     ],
 )
 def test_all(monkeypatch, capsys, test_input):

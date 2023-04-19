@@ -49,7 +49,7 @@ class GameLogic:
             return 1500
 
         # Check for 3 pair
-        if len(roll) == 3 and roll.most_common()[0][1] == 2:
+        if len(roll) == 3 and roll.most_common()[2][1] == 2:
             return 1500
 
         # 3 or more of any number
