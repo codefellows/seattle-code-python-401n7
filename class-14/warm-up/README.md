@@ -5,16 +5,16 @@
 Start a new repl on repl.it and write the following classes and methods from memory:
 
 - Node class:
-    - __init__
+    - `__init__`
 
 - Stack class:
-    - __init__
+    - `__init__`
     - pop
     - push
     - print_stack
 
 - Queue class
-    - __init__
+    - `__init__`
     - dequeue
     - enqueue
     - print_queue
