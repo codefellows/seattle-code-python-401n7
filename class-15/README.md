@@ -1,3 +1,8 @@
+# Warm Up Class 15
+
+Complete in a repl.it
+
+```python
 # TASK 1: Define a Node class with an __init__ method that takes
 # a value (an integer) and optional left and right children (Node instances),
 # and has a __str__ method that returns the instance's value as a string.
@@ -51,3 +56,5 @@ if __name__ == "__main__":
     # TASK 6: Call the inorder_traversal method to print all values in the binary tree
     # Example:
     # binary_tree.inorder_traversal(binary_tree.root)
+
+```
