@@ -7,7 +7,12 @@ def main():
         # Open Chrome and navigate to my target page
         browser = playwright.chromium.launch()
         page = browser.new_page()
-        page.goto("")  # this is where I put my URL
+        page.goto("https://testing-www.codefellows.org/")  # this is where I put my URL
+
+        # Do stuff
+
+        # Close my browser
+        browser.close()
 
 
 if __name__ == "__main__":
