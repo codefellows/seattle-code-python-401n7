@@ -10,6 +10,7 @@ def main():
         page.goto("https://testing-www.codefellows.org/")  # this is where I put my URL
 
         # Do stuff
+        page.get_by_text("Course Calendar").click()
 
         # Close my browser
         browser.close()
