@@ -14,6 +14,6 @@ response = requests.get(url)
 # Target the h1 element's text
 
 soup = BeautifulSoup(response.content, "html.parser")
-
 h1_result = soup.find("h1")
 print(h1_result.text)
+
