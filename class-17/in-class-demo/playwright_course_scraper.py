@@ -11,7 +11,7 @@ def main():
 
         # Do stuff
         page.get_by_text("Course Calendar").click()
-        page.click("text=")
+        page.click(f"text=400: Advanced")
 
         # Close my browser
         browser.close()
