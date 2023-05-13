@@ -34,10 +34,9 @@ def main():
         schedule = "Course Info:\n\n"
 
         for course in course_results:
-            if "Python" in course.h1.text:
-                schedule += course.h2.text + "\n"
-                schedule += course.h1.text + "\n"
-                schedule += "\n"
+            schedule += course.h2.text + "\n"
+            schedule += course.h1.text + "\n"
+            schedule += "\n"
 
         with open("courses.txt", "w") as file:
             file.write(schedule)
