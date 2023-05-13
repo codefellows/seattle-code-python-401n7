@@ -5,13 +5,13 @@ from bs4 import BeautifulSoup
 def main():
     with sync_playwright() as playwright:
         # Open Chrome and navigate to my target page
-        browser = playwright.chromium.launch(headless=False, slow_mo=2000)
+        browser = playwright.chromium.launch(headless=False, slow_mo=3000)
         page = browser.new_page()
         page.goto("https://testing-www.codefellows.org/")  # this is where I put my URL
 
         # Do stuff
         page.get_by_text("Course Calendar").click()
-        page.click("//")
+        page.click("//label[text() = '400: Advanced']")
 
         # Close my browser
         browser.close()
