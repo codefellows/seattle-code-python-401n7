@@ -2,4 +2,6 @@ import requests
 
 
 url = "https://adamowada.github.io/scrape-demo/"
-response =
+response = requests.get(url)
+
+print(response)
