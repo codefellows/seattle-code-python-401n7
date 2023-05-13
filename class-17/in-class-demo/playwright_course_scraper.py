@@ -13,6 +13,8 @@ def main():
         page.get_by_text("Course Calendar").click()
         page.click("//label[text() = '400: Advanced']")
 
+        
+
         # Close my browser
         browser.close()
 
