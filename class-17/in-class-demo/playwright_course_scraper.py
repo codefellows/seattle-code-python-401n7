@@ -27,7 +27,20 @@ def main():
             if course != course_key:  # then I want to click it
                 page.click(f"//label[text() = '{courses[course]}']")
 
-        print(page.content())
+        soup = BeautifulSoup(page.content(), "html.parser")
+
+        course_results = soup.find_all(class_="calendar-event")
+
+        schedule = "Course Info:\n\n"
+
+        for course in course_results:
+            if "Python" in course.h1.text:
+                schedule += course.h2.text + "\n"
+                schedule += course.h1.text + "\n"
+                schedule += "\n"
+
+        with open("courses.txt", "w") as file:
+            file.write(schedule)
 
         # Close my browser
         browser.close()
