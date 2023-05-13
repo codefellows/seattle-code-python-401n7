@@ -18,4 +18,5 @@ for course in course_results:
         schedule += course.h1.text + "\n"
         schedule += "\n"
 
-print(schedule)
+with open("courses.txt", "w") as file:
+    file.write(schedule)
