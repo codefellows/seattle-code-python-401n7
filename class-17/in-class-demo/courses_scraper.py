@@ -7,4 +7,4 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-print(soup)
+soup.find_all()
