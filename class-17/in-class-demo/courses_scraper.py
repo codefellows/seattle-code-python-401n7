@@ -10,8 +10,12 @@ soup = BeautifulSoup(response.content, "html.parser")
 # course_results = soup.find_all(itemtype="http://schema.org/CourseInstance")
 course_results = soup.find_all(class_="calendar-event")
 
+schedule = "Course Info:\n\n"
+
 for course in course_results:
     if "Python" in course.h1.text:
-        print(course.h2.text)
-        print(course.h1.text)
+        schedule += course.h2.text + "\n"
+        schedule += course.h1.text + "\n"
+        schedule += "\n"
 
+print(schedule)
