@@ -11,5 +11,4 @@ soup = BeautifulSoup(response.content, "html.parser")
 course_results = soup.find_all(class_="calendar-event")
 
 for course in course_results:
-    if "Python" in course.h1.text:
-        print(course.h1.text)
+    print(course.h1)
