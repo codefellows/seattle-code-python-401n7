@@ -16,4 +16,4 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 
 h1_result = soup.find("h1")
-print(h1_result)
+print(h1_result.text)
