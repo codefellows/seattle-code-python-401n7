@@ -11,6 +11,7 @@ def main():
 
         # Do stuff
         page.get_by_text("Course Calendar").click()
+        page.click("text=")
 
         # Close my browser
         browser.close()
