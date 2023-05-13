@@ -7,4 +7,6 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-soup.find_all()
+course_results = soup.find_all(itemtype="http://schema.org/CourseInstance")
+print(course_results[0])
+
