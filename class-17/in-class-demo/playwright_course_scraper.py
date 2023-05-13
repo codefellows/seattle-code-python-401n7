@@ -22,7 +22,10 @@ def main():
         }
 
         course_key = "python"  # which course do I WANT to see
-        
+
+        for course in courses:
+            if course != course_key:  # then I want to click it
+                page.click(f"//label[text() = '{courses[course]}']")
 
 
         # Close my browser
