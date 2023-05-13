@@ -7,6 +7,7 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-course_results = soup.find_all(itemtype="http://schema.org/CourseInstance")
+# course_results = soup.find_all(itemtype="http://schema.org/CourseInstance")
+course_results = soup.find_all(class_="http://schema.org/CourseInstance")
 # print(course_results[0])
 print(len(course_results))
