@@ -15,5 +15,4 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-print(type(soup))
-print(soup)
+h1_result = soup.find()
