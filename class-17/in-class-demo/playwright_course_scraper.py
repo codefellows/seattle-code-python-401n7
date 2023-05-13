@@ -13,7 +13,17 @@ def main():
         page.get_by_text("Course Calendar").click()
         page.click("//label[text() = '400: Advanced']")
 
+        courses = {
+            "java": "Code 401: Java",
+            "javascript": "Code 401: JavaScript",
+            ".net": "Code 401: ASP.NET",
+            "python": "Code 401: Python",
+            "cybersecurity": "Ops 401: Cybersecurity",
+        }
+
+        course_key = "python"  # which course do I WANT to see
         
+
 
         # Close my browser
         browser.close()
