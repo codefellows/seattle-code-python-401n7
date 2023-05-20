@@ -6,13 +6,14 @@ import os
 
 def list_files(directory):
     """List all files in a given directory"""
-    files = os.listdir(directory)
-    # build up a rich table iteratively
-    table = Table(title=f"Files in [bold green]{directory}[/bold green]:")
-    table.add_column("File Name")
-    for file in files:
-        table.add_row(file)
-    console.print(table)
+    try:
+        files = os.listdir(directory)
+        # build up a rich table iteratively
+        table = Table(title=f"Files in [bold green]{directory}[/bold green]:")
+        table.add_column("File Name")
+        for file in files:
+            table.add_row(file)
+        console.print(table)
 
 
 # Main entrypoint
