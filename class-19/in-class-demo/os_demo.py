@@ -12,6 +12,6 @@ print(os.listdir("."))
 
 # Delete the directory with shutil
 # Use shutil.rmtree() to remove a directory and all its contents
-# shutil.rmtree('test_dir')
-# print('test_dir deleted')
+shutil.rmtree('test/test_dir')
+print('test_dir deleted')
 
