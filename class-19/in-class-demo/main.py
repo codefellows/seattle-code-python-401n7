@@ -14,6 +14,8 @@ def list_files(directory):
         for file in files:
             table.add_row(file)
         console.print(table)
+    except FileNotFoundError:
+        console.print(f"[bold red]Directory [underline]{directory}[/underline] not found!!!!![/bold red]")
 
 
 # Main entrypoint
