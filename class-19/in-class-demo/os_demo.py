@@ -27,8 +27,8 @@ with open(file_path, 'w') as file:
 print('List of files/directories in test_dir:')
 print(os.listdir('test_dir'))
 
-# # Split the file path into root and extension
-# root, ext = os.path.splitext(file_path)
-# print(f'Root of the file path: {root}')
-# print(f'Extension of the file path: {ext}')
+# Split the file path into root and extension
+root, ext = os.path.splitext(file_path)
+print(f'Root of the file path: {root}')
+print(f'Extension of the file path: {ext}')
 
