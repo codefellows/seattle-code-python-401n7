@@ -6,4 +6,4 @@ from rich.prompt import Prompt
 console = Console()
 
 # Greet the user
-console.print("Hello!")
+console.print("Hello! [bold green]Hello again![/bold green]")
