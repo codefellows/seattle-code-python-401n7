@@ -6,11 +6,14 @@ from rich.table import Table
 # Main entrypoint
 def main():
     """
-    
-    :return:
+    Main function to run the CLI app. Going to act like my menu.
+    :return: None
     """
-    pass
+    while True:
+        console.print("\n1. List files\n2. Exit")
+        choice = Prompt.ask("Choose a task or exit")
 
 
 if __name__ == "__main__":
+    console = Console()
     main()
