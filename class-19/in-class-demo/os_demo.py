@@ -16,13 +16,13 @@ print('Directory created.')
 # print('test_dir deleted')
 
 # Join path components for the new file in the created directory
-file_path = os.path.join('test_dir', 'test_file.txt')
+file_path = os.path.join('test_dir', 'test_file.txt')  # returns a file path!
 print(f'Constructed file path: {file_path}')
 
 # # Create a new file in the created directory
-# with open(file_path, 'w') as file:
-#     file.write('Hello, World!')
-#
+with open(file_path, 'w') as file:
+    file.write('Hello, World!')
+
 # # List files and directories in the created directory
 # print('List of files/directories in test_dir:')
 # print(os.listdir('test_dir'))
