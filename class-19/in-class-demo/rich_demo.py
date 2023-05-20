@@ -1,5 +1,5 @@
 from rich.console import Console
-from rich.console import Prompt
+from rich.prompt import Prompt
 
 
 # Instantiate a console object
