@@ -12,6 +12,7 @@ def list_files(directory):
     table.add_column("File Name")
     for file in files:
         table.add_row(file)
+    console.print(table)
 
 
 # Main entrypoint
@@ -21,13 +22,16 @@ def main():
     :return: None
     """
     while True:
+        # 1. Print options
         console.print("\n1. List files\n2. Exit")
         choice = Prompt.ask("Choose a task or exit")
 
-        # if elif else block
+        # 2. Build if/elif/else block
         if choice == "1":
             # invoke list_files function
-            pass
+            # 3. Get user input
+            directory = Prompt.ask("Enter the [red]directory[/red] to list [underline]files[/underline]")
+            list_files(directory)
         elif choice == "2":
             break
 
