@@ -24,9 +24,9 @@ with open(file_path, 'w') as file:
     file.write('Hello, World!')
 
 # # List files and directories in the created directory
-# print('List of files/directories in test_dir:')
-# print(os.listdir('test_dir'))
-#
+print('List of files/directories in test_dir:')
+print(os.listdir('test_dir'))
+
 # # Split the file path into root and extension
 # root, ext = os.path.splitext(file_path)
 # print(f'Root of the file path: {root}')
