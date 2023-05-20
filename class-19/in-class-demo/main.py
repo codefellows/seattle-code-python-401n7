@@ -1,10 +1,17 @@
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.table import Table
+import os
 
 
-def list_files():
-    pass
+def list_files(directory):
+    """List all files in a given directory"""
+    files = os.listdir(directory)
+    # build up a rich table iteratively
+    table = Table(title=f"Files in [bold green]{directory}[/bold green]:")
+    table.add_column("File Name")
+    for file in files:
+        table.add_row(file)
 
 
 # Main entrypoint
