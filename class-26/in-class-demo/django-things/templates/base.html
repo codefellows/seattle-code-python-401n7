@@ -1,3 +1,6 @@
+{% load compress %}
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,12 +9,25 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  {% compress css %}
+  <link rel="stylesheet" href="{% static 'src/output.css' %}">
+  {% endcompress %}
 </head>
-<body>
+<body class="bg-green-50">
 
-  {% block content %}
-  <!-- child template content goes here -->
-  {% endblock content %}
+  <!--  add a nav bar -->
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+  </nav>
 
+
+  <div class="container mx-auto mt-4">
+        {% block content %}
+        {% endblock content %}
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 </html>
