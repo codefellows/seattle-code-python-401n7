@@ -2,4 +2,11 @@
 
 {% block content %}
 <h1>Home Page</h1>
+
+<!-- Where does 'things' come from? -->
+{% for thing in things %}
+  <h2>Name: {{ thing.title }}</h2>
+  <p>Description: {{ thing.description }}</p>
+{% endfor %}
+
 {% endblock content %}
