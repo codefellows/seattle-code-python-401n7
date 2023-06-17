@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
 # 1. do models.py
 # 2. python manage.py makemigrations
@@ -15,3 +16,7 @@ class Thing(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('thing_detail', args=[str(self.id)])
+        # return reverse('thing_list')

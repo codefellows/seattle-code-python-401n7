@@ -1,4 +1,5 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
+from django.urls import reverse_lazy
 from .models import Thing
 
 
@@ -13,4 +14,22 @@ class ThingDetailView(DetailView):
     model = Thing
 
 
-# More CRUD to come!
+class ThingCreateView(CreateView):
+    template_name = "thing_create.html"
+    model = Thing
+
+    # NEW! this represents the fields that will be rendered in the form
+    fields = ["name", "rating", "reviewer"]
+
+
+class ThingDeleteView(DeleteView):
+    template_name = "thing_delete.html"
+    model = Thing
+    success_url = reverse_lazy("thing_list")  # look up why!
+
+
+class ThingUpdateView(UpdateView):
+    # Looks exactly like CreateView
+    template_name = "thing_update.html"
+    model = Thing
+    fields = "__all__"  # this would also work in the ThingCreateView
