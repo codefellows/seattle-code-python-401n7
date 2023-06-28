@@ -11,4 +11,4 @@ class ThingList(generics.ListAPIView):
 class ThingDetail(generics.RetrieveAPIView):
     queryset = Thing.objects.all()
     serializer_class = ThingSerializer
-    
+
