@@ -5,6 +5,6 @@ from .views import ThingList, ThingDetail
 # ThingDetail will show all of the fields for one of the things
 
 urlpatterns = [
-    path('', ThingList.as_view()),
+    path('', ThingList.as_view()),  # don't need the `name='thing_list'`
     path('<int:pk>/', ThingDetail.as_view()),
 ]
