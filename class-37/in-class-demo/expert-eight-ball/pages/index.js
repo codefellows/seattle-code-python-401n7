@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
 
                 {/* Table */}
-                <table className="w-1/2 mx-auto my-4 border border-gray-500">
+                {answeredQuestions.length  <table className="w-1/2 mx-auto my-4 border border-gray-500">
                     <thead>
                         <tr>
                             <th className="border border-gray-500">Id</th>
@@ -82,8 +82,8 @@ export default function Home() {
                             return (
                                 <tr key={item.id}>
                                     <td className="pl-2 border border-gray-700">{item.id}</td>
-                                    <td>{item.question}</td>
-                                    <td>{item.answer}</td>
+                                    <td className="pl-2 border border-gray-700">{item.question}</td>
+                                    <td className="pl-2 border border-gray-700">{item.answer}</td>
                                 </tr>
                             );
                         })}
