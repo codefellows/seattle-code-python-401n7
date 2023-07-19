@@ -59,7 +59,7 @@ export default function Home() {
                 </div>
 
                 {/* Table */}
-                <table>
+                <table className="w-1/2 mx-auto my-4">
                   <thead>
                     <tr>
                       <th>Id</th>
@@ -70,8 +70,8 @@ export default function Home() {
                   <tbody>
                     <tr>
                       <td>0</td>
-                      <td></td>
-                      <td></td>
+                      <td>Will it Rain?</td>
+                      <td>Yes.</td>
                     </tr>
                   </tbody>
                 </table>
