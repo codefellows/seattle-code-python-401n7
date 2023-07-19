@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Expert Eight Ball</title>
       </Head>
-      <header className="flex  bg-gray-500">
+      <header className="flex item-center justify- bg-gray-500">
         <h1>Expert 8 Ball</h1>
         <p>1 question answered</p>
       </header>
