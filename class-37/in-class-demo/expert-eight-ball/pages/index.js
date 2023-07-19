@@ -4,7 +4,7 @@ import { replies } from '../data';
 import { useState } from 'react';
 
 export default function Home() {
-    const [answeredQuestions, setAn]
+    const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
     function questionAskedHandler(event) {
       event.preventDefault();
