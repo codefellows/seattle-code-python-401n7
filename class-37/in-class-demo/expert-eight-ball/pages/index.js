@@ -13,7 +13,9 @@ export default function Home() {
       const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
       const answeredQuestion = {
-        question
+        question: event.target.question.value,
+        reply: randomReply,
+        id: answeredQuestions.length
       }
 
       //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
