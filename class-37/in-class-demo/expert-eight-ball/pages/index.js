@@ -62,15 +62,18 @@ export default function Home() {
                 <table>
                   <thead>
                     <tr>
-                      
+                      <th>Id</th>
+                      <th>Question</th>
+                      <th>Answer</th>
                     </tr>
                   </thead>
                   <tbody>
-
+                    <tr>
+                      <td>0</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
                   </tbody>
-                  <tfoot>
-
-                  </tfoot>
                 </table>
             </main>
 
