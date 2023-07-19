@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 import Head from "next/head";
+import { replies } from '../data';
 
 export default function Home() {
     function questionAskedHandler(event) {
