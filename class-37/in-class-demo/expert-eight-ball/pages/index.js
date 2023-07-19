@@ -13,7 +13,7 @@ export default function Home() {
       const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
       console.log("answeredQuestions is:", answeredQuestions);
-      console.log("setAnsweredQuestions is:", answeredQuestions);
+      console.log("setAnsweredQuestions is:", setAnsweredQuestions);
       alert(randomReply);
     }
 
