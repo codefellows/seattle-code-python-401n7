@@ -80,9 +80,9 @@ export default function Home() {
                     </tr> */}
                         {answeredQuestions.map((item) => {
                             return (
-                                <tr>
-                                    <td>0</td>
-                                    <td>Will it Rain?</td>
+                                <tr key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td></td>
                                     <td>Yes.</td>
                                 </tr>
                             );
