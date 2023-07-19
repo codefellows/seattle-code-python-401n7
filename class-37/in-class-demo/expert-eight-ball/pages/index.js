@@ -4,6 +4,8 @@ import { replies } from '../data';
 import { useState } from 'react';
 
 export default function Home() {
+    const [answeredQuestions, setAn]
+
     function questionAskedHandler(event) {
       event.preventDefault();
       //   console.log(event.target.question.value);
