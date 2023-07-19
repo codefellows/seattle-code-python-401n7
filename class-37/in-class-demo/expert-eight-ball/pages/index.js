@@ -28,7 +28,7 @@ export default function Home() {
       if (answeredQuestions.length === 0) {
         return 'Ask a question!';
       }
-      return answeredQuestions[answeredQuestions.length.reply - 1];
+      return answeredQuestions[answeredQuestions.length - 1].reply;
     }
 
     return (
