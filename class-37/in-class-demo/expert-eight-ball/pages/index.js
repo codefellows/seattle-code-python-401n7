@@ -101,7 +101,7 @@ export default function Home() {
 
             <footer className="flex bg-gray-500 text-gray-50 p-4">
                 <p>Expert 8 ball &copy;2023</p>
-                <Link className="just" href="">
+                <Link className="justify-between" href="/careers">
                   Careers
                 </Link>
             </footer>
