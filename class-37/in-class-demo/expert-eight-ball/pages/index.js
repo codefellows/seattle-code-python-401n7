@@ -12,9 +12,10 @@ export default function Home() {
       //   alert(event.target.question.value);
       const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
+      //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
+      //   alert(randomReply);
+      setAnsweredQuestions()
       console.log("answeredQuestions is:", answeredQuestions);
-      console.log("setAnsweredQuestions is:", setAnsweredQuestions);
-      alert(randomReply);
     }
 
     return (
