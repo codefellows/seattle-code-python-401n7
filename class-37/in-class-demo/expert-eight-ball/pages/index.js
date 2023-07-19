@@ -17,7 +17,7 @@ export default function Home() {
         {/* Question Form */}
         <form className="flex w-1/2 p-2 my-4 bg-gray-200">
           <input className="flex-auto pl-1" />
-          <button className="bg-gray-500  px-2 py-1">Ask!</button>
+          <button className="bg-gray-500 text-gray-50 px-2 py-1">Ask!</button>
         </form>
 
       </main>
