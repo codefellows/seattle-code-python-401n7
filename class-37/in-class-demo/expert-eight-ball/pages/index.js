@@ -59,12 +59,12 @@ export default function Home() {
                 </div>
 
                 {/* Table */}
-                <table className="w-1/2 mx-auto my-4">
-                  <thead className="border-gray-500">
+                <table className="w-1/2 mx-auto my-4 border border-gray-500">
+                  <thead>
                     <tr>
-                      <th>Id</th>
-                      <th>Question</th>
-                      <th>Answer</th>
+                      <th className="border border-gray-500>Id</th>
+                      <th className="border border-gray-500>Question</th>
+                      <th className="border border-gray-500>Answer</th>
                     </tr>
                   </thead>
                   <tbody>
