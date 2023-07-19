@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Home() {
     function questionAskedHandler(event) {
       event.preventDefault();
-      console.log(event);
+      console.log(event.target.question.value);
     //   alert()
     }
 
