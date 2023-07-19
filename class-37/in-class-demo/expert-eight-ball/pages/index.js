@@ -59,7 +59,17 @@ export default function Home() {
                 </div>
 
                 {/* Table */}
-                
+                <table>
+                  <thead>
+
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                  <tfoot>
+                    
+                  </tfoot>
+                </table>
             </main>
 
             <footer className="bg-gray-500 text-gray-50 p-4">
