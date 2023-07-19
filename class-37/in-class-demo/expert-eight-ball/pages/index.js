@@ -14,7 +14,7 @@ export default function Home() {
 
       //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
       //   alert(randomReply);
-      setAnsweredQuestions()
+      setAnsweredQuestions([...answeredQuestions, randomReply]);
       console.log("answeredQuestions is:", answeredQuestions);
     }
 
