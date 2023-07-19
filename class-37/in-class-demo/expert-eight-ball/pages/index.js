@@ -5,7 +5,7 @@ export default function Home() {
     function questionAskedHandler(event) {
       event.preventDefault();
       console.log(event.target.question.value);
-    //   alert()
+    
     }
 
     return (
