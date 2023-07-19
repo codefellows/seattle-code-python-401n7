@@ -10,7 +10,7 @@ export default function Home() {
       <header>
         <h1>Testing 123</h1>
       </header>
-      <main className="flex flex-col items-center py-">
+      <main className="flex flex-col items-center py-4 space-y-8">
         <p>Sample text. Eight ball goes here</p>
       </main>
       <footer>
