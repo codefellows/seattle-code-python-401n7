@@ -81,9 +81,9 @@ export default function Home() {
                         {answeredQuestions.map((item) => {
                             return (
                                 <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td></td>
-                                    <td>Yes.</td>
+                                    <td className="pl-2 border border-gray-700">{item.id}</td>
+                                    <td>{item.question}</td>
+                                    <td>{item.answer}</td>
                                 </tr>
                             );
                         })}
