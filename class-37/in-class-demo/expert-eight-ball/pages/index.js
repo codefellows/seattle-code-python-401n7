@@ -20,6 +20,11 @@ export default function Home() {
           <button className="bg-gray-500 text-gray-50 px-2 py-1">Ask!</button>
         </form>
 
+        {/* Eight Ball */}
+        <div className="w-96 h-96">
+
+        </div>
+
       </main>
 
       <footer className="bg-gray-500 text-gray-50 p-4">
