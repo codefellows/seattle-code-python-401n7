@@ -20,7 +20,7 @@ export default function Home() {
 
     function getLatestReply() {
       if (answeredQuestions.length === 0) {
-        
+        return 'Ask a question!';
       }
     }
 
