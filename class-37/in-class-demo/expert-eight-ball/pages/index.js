@@ -22,7 +22,9 @@ export default function Home() {
 
         {/* Eight Ball */}
         <div className="w-96 h-96 bg-gray-900 rounded-full">
+          <div className="w-48 h-48">
 
+          </div>
         </div>
 
       </main>
