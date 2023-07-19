@@ -68,11 +68,14 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    {/* <tr>
                       <td>0</td>
                       <td>Will it Rain?</td>
                       <td>Yes.</td>
-                    </tr>
+                    </tr> */}
+                    {
+                      answeredQuestions.
+                    }
                   </tbody>
                 </table>
             </main>
