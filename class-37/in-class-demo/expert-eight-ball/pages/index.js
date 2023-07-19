@@ -22,6 +22,7 @@ export default function Home() {
       if (answeredQuestions.length === 0) {
         return 'Ask a question!';
       }
+      return answeredQuestions[-1];
     }
 
     return (
