@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-
+import Head
 
 export default function Home() {
   return (
