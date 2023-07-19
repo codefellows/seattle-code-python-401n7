@@ -10,8 +10,8 @@ export default function Home() {
       <header>
         <h1>Testing 123</h1>
       </header>
-      <main>
-
+      <main className="">
+        <p>Sample text. Eight ball goes here</p>
       </main>
       <footer>
 
