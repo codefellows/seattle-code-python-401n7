@@ -7,7 +7,15 @@ export default function Home() {
       <Head>
         <title>Expert Eight Ball</title>
       </Head>
-      
+      <header>
+        <h1></h1>
+      </header>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
     </>
   );
 }
