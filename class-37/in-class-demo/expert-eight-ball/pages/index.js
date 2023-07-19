@@ -8,7 +8,8 @@ export default function Home() {
         <title>Expert Eight Ball</title>
       </Head>
       <header>
-        <h1>Testing 123</h1>
+        <h1>Expert 8 Ball</h1>
+        
       </header>
       <main className="flex flex-col items-center py-4 space-y-8">
         <p>Sample text. Eight ball goes here</p>
