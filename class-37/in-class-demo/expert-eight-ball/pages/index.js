@@ -18,6 +18,12 @@ export default function Home() {
       console.log("answeredQuestions is:", answeredQuestions);
     }
 
+    function getLatestReply() {
+      if (answeredQuestions.length === 0) {
+        
+      }
+    }
+
     return (
         <>
             <Head>
