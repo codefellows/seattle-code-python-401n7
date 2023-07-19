@@ -61,13 +61,15 @@ export default function Home() {
                 {/* Table */}
                 <table>
                   <thead>
-
+                    <tr>
+                      
+                    </tr>
                   </thead>
                   <tbody>
 
                   </tbody>
                   <tfoot>
-                    
+
                   </tfoot>
                 </table>
             </main>
