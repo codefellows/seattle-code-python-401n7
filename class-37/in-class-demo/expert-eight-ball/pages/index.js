@@ -60,7 +60,7 @@ export default function Home() {
 
                 {/* Table */}
                 <table className="w-1/2 mx-auto my-4">
-                  <thead>
+                  <thead className="border-gray-500">
                     <tr>
                       <th>Id</th>
                       <th>Question</th>
