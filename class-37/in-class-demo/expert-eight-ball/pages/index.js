@@ -5,8 +5,8 @@ import { replies } from '../data';
 export default function Home() {
     function questionAskedHandler(event) {
       event.preventDefault();
-    //   console.log(event.target.question.value);
-      alert(event.target.question.value);
+      //   console.log(event.target.question.value);
+      //   alert(event.target.question.value);
     }
 
     return (
