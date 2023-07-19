@@ -16,11 +16,11 @@ export default function Home() {
         question: event.target.question.value,
         reply: randomReply,
         id: answeredQuestions.length
-      }
+      };
 
       //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
       //   alert(randomReply);
-      setAnsweredQuestions([...answeredQuestions, randomReply]);
+      setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
       console.log("answeredQuestions is:", answeredQuestions);
     }
 
