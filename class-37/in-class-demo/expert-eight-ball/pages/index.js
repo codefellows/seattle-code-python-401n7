@@ -21,7 +21,7 @@ export default function Home() {
         </form>
 
         {/* Eight Ball */}
-        <div className="w-96 h-96">
+        <div className="w-96 h-96 bg-gray-900 round">
 
         </div>
 
