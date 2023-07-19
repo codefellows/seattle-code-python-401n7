@@ -17,7 +17,7 @@ export default function Home() {
         <p>Sample text. Eight ball goes here</p>
       </main>
 
-      <footer className="bg-gray-500">
+      <footer className="bg-gray-500 text-gray-50 p-4">
         <p>Expert 8 ball &copy;2023</p>
       </footer>
     </>
