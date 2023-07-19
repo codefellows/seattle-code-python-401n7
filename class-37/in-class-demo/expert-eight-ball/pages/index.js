@@ -62,9 +62,9 @@ export default function Home() {
                 <table className="w-1/2 mx-auto my-4 border border-gray-500">
                   <thead>
                     <tr>
-                      <th className="border border-gray-500>Id</th>
-                      <th className="border border-gray-500>Question</th>
-                      <th className="border border-gray-500>Answer</th>
+                      <th className="border border-gray-500">Id</th>
+                      <th className="border border-gray-500">Question</th>
+                      <th className="border border-gray-500">Answer</th>
                     </tr>
                   </thead>
                   <tbody>
