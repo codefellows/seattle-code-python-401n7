@@ -57,6 +57,9 @@ export default function Home() {
                         <p className="text-xl text-center">{getLatestReply()}</p>
                     </div>
                 </div>
+
+                {/* Table */}
+                
             </main>
 
             <footer className="bg-gray-500 text-gray-50 p-4">
