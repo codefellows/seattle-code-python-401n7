@@ -6,7 +6,6 @@ export default function Home() {
       event.preventDefault();
     //   console.log(event.target.question.value);
       alert(event.target.question.value);
-
     }
 
     return (
