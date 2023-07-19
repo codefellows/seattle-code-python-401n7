@@ -64,31 +64,38 @@ export default function Home() {
                 </div>
 
                 {/* Table */}
-                {answeredQuestions.length  <table className="w-1/2 mx-auto my-4 border border-gray-500">
-                    <thead>
-                        <tr>
-                            <th className="border border-gray-500">Id</th>
-                            <th className="border border-gray-500">Question</th>
-                            <th className="border border-gray-500">Answer</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* <tr>
-                      <td>0</td>
-                      <td>Will it Rain?</td>
-                      <td>Yes.</td>
-                    </tr> */}
-                        {answeredQuestions.map((item) => {
-                            return (
-                                <tr key={item.id}>
-                                    <td className="pl-2 border border-gray-700">{item.id}</td>
-                                    <td className="pl-2 border border-gray-700">{item.question}</td>
-                                    <td className="pl-2 border border-gray-700">{item.answer}</td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
+                {answeredQuestions.length > 0 && (
+                    <table className="w-1/2 mx-auto my-4 border border-gray-500">
+                        <thead>
+                            <tr>
+                                <th className="border border-gray-500">Id</th>
+                                <th className="border border-gray-500">
+                                    Question
+                                </th>
+                                <th className="border border-gray-500">
+                                    Answer
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {answeredQuestions.map((item) => {
+                                return (
+                                    <tr key={item.id}>
+                                        <td className="pl-2 border border-gray-700">
+                                            {item.id}
+                                        </td>
+                                        <td className="pl-2 border border-gray-700">
+                                            {item.question}
+                                        </td>
+                                        <td className="pl-2 border border-gray-700">
+                                            {item.answer}
+                                        </td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                )}
             </main>
 
             <footer className="bg-gray-500 text-gray-50 p-4">
