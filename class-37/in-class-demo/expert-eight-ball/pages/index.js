@@ -1,34 +1,34 @@
 /* eslint-disable indent */
 import Head from "next/head";
-import { replies } from '../data';
-import { useState } from 'react';
+import { replies } from "../data";
+import { useState } from "react";
 
 export default function Home() {
     const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
     function questionAskedHandler(event) {
-      event.preventDefault();
-      //   console.log(event.target.question.value);
-      //   alert(event.target.question.value);
-      const randomReply = replies[Math.floor(Math.random() * replies.length)];
+        event.preventDefault();
+        //   console.log(event.target.question.value);
+        //   alert(event.target.question.value);
+        const randomReply = replies[Math.floor(Math.random() * replies.length)];
 
-      const answeredQuestion = {
-        question: event.target.question.value,
-        reply: randomReply,
-        id: answeredQuestions.length
-      };
+        const answeredQuestion = {
+            question: event.target.question.value,
+            reply: randomReply,
+            id: answeredQuestions.length,
+        };
 
-      //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
-      //   alert(randomReply);
-      setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
-      console.log("answeredQuestions is:", answeredQuestions);
+        //   console.log("setAnsweredQuestions is:", setAnsweredQuestions);
+        //   alert(randomReply);
+        setAnsweredQuestions([...answeredQuestions, answeredQuestion]);
+        console.log("answeredQuestions is:", answeredQuestions);
     }
 
     function getLatestReply() {
-      if (answeredQuestions.length === 0) {
-        return 'Ask a question!';
-      }
-      return answeredQuestions[answeredQuestions.length - 1].reply;
+        if (answeredQuestions.length === 0) {
+            return "Ask a question!";
+        }
+        return answeredQuestions[answeredQuestions.length - 1].reply;
     }
 
     return (
@@ -44,7 +44,10 @@ export default function Home() {
 
             <main className="flex flex-col items-center py-4 space-y-8">
                 {/* Question Form */}
-                <form className="flex w-1/2 p-2 my-4 bg-gray-200" onSubmit={questionAskedHandler}>
+                <form
+                    className="flex w-1/2 p-2 my-4 bg-gray-200"
+                    onSubmit={questionAskedHandler}
+                >
                     <input name="question" className="flex-auto pl-1" />
                     <button className="bg-gray-500 text-gray-50 px-2 py-1">
                         Ask!
@@ -54,29 +57,37 @@ export default function Home() {
                 {/* Eight Ball */}
                 <div className="w-96 h-96 mx-auto my-4 bg-gray-900 rounded-full">
                     <div className="relative flex items-center justify-center w-48 h-48 rounded-full bg-gray-50 top-16 left-16">
-                        <p className="text-xl text-center">{getLatestReply()}</p>
+                        <p className="text-xl text-center">
+                            {getLatestReply()}
+                        </p>
                     </div>
                 </div>
 
                 {/* Table */}
                 <table className="w-1/2 mx-auto my-4 border border-gray-500">
-                  <thead>
-                    <tr>
-                      <th className="border border-gray-500">Id</th>
-                      <th className="border border-gray-500">Question</th>
-                      <th className="border border-gray-500">Answer</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {/* <tr>
+                    <thead>
+                        <tr>
+                            <th className="border border-gray-500">Id</th>
+                            <th className="border border-gray-500">Question</th>
+                            <th className="border border-gray-500">Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {/* <tr>
                       <td>0</td>
                       <td>Will it Rain?</td>
                       <td>Yes.</td>
                     </tr> */}
-                    {
-                      answeredQuestions.
-                    }
-                  </tbody>
+                        {answeredQuestions.map((item) => {
+                            return (
+                                <tr>
+                                    <td>0</td>
+                                    <td>Will it Rain?</td>
+                                    <td>Yes.</td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
                 </table>
             </main>
 
