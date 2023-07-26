@@ -19,6 +19,7 @@ class CookieStand(models.Model):
 
     def save(self, *args, **kwargs):
 
+        # Conditionally on creation of a new CookieStand!
         if not self.pk and not self.hourly_sales:
             min = self.minimum_customers_per_hour
             max = self.maximum_customers_per_hour
@@ -30,4 +31,5 @@ class CookieStand(models.Model):
 
             self.hourly_sales = cookies_each_hour
 
+        # this is the method for saving a CookieStand into our db
         super().save(*args, **kwargs)
