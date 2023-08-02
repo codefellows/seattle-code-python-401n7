@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Attribution
+
+- Used ChatGPT to style my forms [link to convo](https://chat.openai.com/share/b60c7930-f42f-43bb-aec1-0b5413ede089)
+
 ## Getting Started
 
 First, run the development server:

@@ -1,11 +1,10 @@
 import Head from "next/head";
+import { useState } from "react";
 import { useAuth } from "@/contexts/auth";
 import useResource from "@/hooks/useResource";
 
 export default function Home() {
-    // const user = null; // this will be authentication code
-    // const user = { username: 'somebody' }; // this will be authentication code
-    const { user, login, logout } = useAuth(); // user variable and login() function come from the useAuth hook
+    const { user, login, logout, register } = useAuth();
 
     return (
         <div>
@@ -29,23 +28,58 @@ export default function Home() {
                         >
                             Logout
                         </button>
-                        {/* <StandList stands={resources} loading={loading} /> */}
                         <CookieStandAdmin />
                     </>
                 ) : (
                     <>
-                        {/* <h2>Need to log in</h2>
-                        <button
-                            onClick={() => login("admin", "1234")}
-                            className="p-2 text-white bg-gray-500 rounded"
-                        >
-                            Login
-                        </button> */}
                         <LoginForm onLogin={login} />
+                        {/* new register form */}
+                        <RegisterForm onRegister={register} />
                     </>
                 )}
             </main>
         </div>
+    );
+}
+
+// New
+function RegisterForm({ onRegister }) {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (password !== confirmPassword) {
+            setErrorMessage('Passwords do not match');
+            return;
+        }
+        // pass the form values of username, password, and email to `register` in auth.js
+        onRegister(username, password, email);
+    };
+
+    return (
+        <form onSubmit={handleSubmit} className="flex flex-col w-2/4 mx-auto">
+            <legend className="block text-gray-700 text-lg font-bold mb-2">
+                Register New User
+            </legend>
+            <label className="font-bold text-gray-700 mb-2" htmlFor="username">Username</label>
+            <input id="username" type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} className="p-2 mb-4 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300" />
+
+            <label className="font-bold text-gray-700 mb-2" htmlFor="password">Password</label>
+            <input id="password" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} className="p-2 mb-4 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300" />
+
+            <label className="font-bold text-gray-700 mb-2" htmlFor="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" placeholder="Confirm Password" onChange={(e) => setConfirmPassword(e.target.value)} className="p-2 mb-4 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300" />
+
+            <label className="font-bold text-gray-700 mb-2" htmlFor="email">Email</label>
+            <input id="email" type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} className="p-2 mb-4 border border-gray-300 rounded shadow-sm focus:outline-none focus:border-blue-300" />
+
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+            <button type="submit" className="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-400">Register</button>
+        </form>
     );
 }
 
@@ -56,34 +90,52 @@ function LoginForm({ onLogin }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <fieldset autoComplete="off">
-                <legend>Log In</legend>
-                <label htmlFor="username">Username</label>
-                <input name="username" />
-                <label htmlFor="password">Password</label>
-                <input type="password" name="password" />
-                <button>Log In</button>
+        <form
+            onSubmit={handleSubmit}
+            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-2/4 mx-auto"
+        >
+            <fieldset autoComplete="off" className="mb-4">
+                <legend className="block text-gray-700 text-lg font-bold mb-2">
+                    Log In
+                </legend>
+
+                <div className="mb-4">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="username"
+                    >
+                        Username
+                    </label>
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        name="username"
+                    />
+                </div>
+
+                <div className="mb-6">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="password"
+                    >
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        name="password"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    />
+                </div>
+
+                <button
+                    type="submit"
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                >
+                    Log In
+                </button>
             </fieldset>
         </form>
     );
 }
-
-// Don't need a <li> we need a table!
-
-// function StandList({ stands, loading }) {
-//     if (loading) {
-//         return <p>Loading...</p>;
-//     }
-
-//     return (
-//         <ul>
-//             {stands.map((stand) => (
-//                 <li key={stand.id}>{stand.location}</li>
-//             ))}
-//         </ul>
-//     );
-// }
 
 function CookieStandAdmin() {
     const { resources, deleteResource } = useResource();
@@ -116,14 +168,43 @@ function CookieStandForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-2/4 mx-auto" onSubmit={handleSubmit}>
             <fieldset>
-                <legend>Create Cookie Stand</legend>
-                <input placeholder="location" name="location" />
-                <input placeholder="minimum" name="minimum" />
-                <input placeholder="maximum" name="maximum" />
-                <input placeholder="average" name="average" />
-                <button>create</button>
+                <legend className="block text-gray-700 text-lg font-bold mb-2">Create Cookie Stand</legend>
+
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="location">
+                        Location
+                    </label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Location" name="location" id="location" />
+                </div>
+
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="minimum">
+                        Minimum
+                    </label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Minimum" name="minimum" id="minimum" />
+                </div>
+
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="maximum">
+                        Maximum
+                    </label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Maximum" name="maximum" id="maximum" />
+                </div>
+
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="average">
+                        Average
+                    </label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Average" name="average" id="average" />
+                </div>
+
+                <div className="flex items-center justify-between">
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        Create
+                    </button>
+                </div>
             </fieldset>
         </form>
     );

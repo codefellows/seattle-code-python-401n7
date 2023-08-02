@@ -20,6 +20,7 @@ export function AuthProvider(props) {
         user: null,
         login,
         logout,
+        register,
     });
 
     async function login(username, password) {
@@ -56,6 +57,30 @@ export function AuthProvider(props) {
             user: null,
         };
         setState(prevState => ({ ...prevState, ...newState }));
+    }
+
+    // new
+    async function register(username, password, email) {
+
+        const registerUrl = baseUrl + '/api/register';
+
+        const options = {
+            method: "POST",
+            body: JSON.stringify({username, password, email}),
+            headers: {'Content-Type': 'application/json'},
+        };
+
+        const response = await fetch(registerUrl, options);
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Registration Successful', data);
+
+            // Automatically log in the user after successful registration
+            login(username, password);
+        } else {
+            console.error('Registration Failed');
+        }
     }
 
     return (
